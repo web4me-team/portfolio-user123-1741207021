@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>DANIEL DENG</h1>
+            </div>
+            <img src="/profile/16.svg" alt="Profile Picture" class="profile-pic">
+            <div class="content-container">
+                <div class="profile-card">
+                    <p class="summary">
+                        Daniel Deng is a highly skilled software engineer with a strong academic background in computer science from Yale University and Wuhan University. He has experience in developing AI-driven applications and scalable platforms, with expertise in programming languages such as Python, C/C++, and JavaScript. His work includes implementing advanced cryptographic techniques and optimizing data interactions for large-scale applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/zhanqideng" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a href="mailto:danielzdeng01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="tel:+12038876167" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2>Education</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2024</div>
+                        <div class="timeline-content">
+                            <h3>Master of Science in Computer Science</h3>
+                            <p>Yale University</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun. 2022</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Engineering in Computer Science</h3>
+                            <p>Wuhan University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug. 2024 – Oct. 2024</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer (Part-time)</h3>
+                            <span>Pleasure House, Inc.<br></span>
+                            <p>Developed an AI-driven character chat website using Next.js and TypeScript, enabling users to create and chat with customized virtual chatbots.</p>
+                            <p>Implemented tRPC routers and procedures to establish a type-safe communication layer between the frontend and backend, enabling seamless and responsive conversation with chatbots.</p>
+                            <p>Designed data schemas for users, chatbots, and messages in MongoDB to ensure efficient data organization and retrieval; Used Prisma to execute and manage type-safe database operations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug. 2021 – Dec. 2021</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <span>Microsoft<br></span>
+                            <p>Developed features for the meeting report module of Microsoft Teams with React and TypeScript, such as recording participants’ actions in meetings and generating downloadable attendance reports.</p>
+                            <p>Implemented efficient data interactions with the back-end server using GraphQL Queries and Mutations; used Subscriptions to track and record real-time participants’ actions in meetings.</p>
+                            <p>Used React Hooks like useContext and useCallback to optimize data flow and rendering process within the meeting analytics component.</p>
+                            <p>Implemented unit tests using ts-jest and React Testing Library to validate the functionality of front-end components.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jan. 2022 – May. 2022</div>
+                        <div class="timeline-content">
+                            <h3>Research Assistant</h3>
+                            <span>National Engineering Research Center for Multimedia Software<br></span>
+                            <p>Implemented a helmet wearing detection model based on the Yolov5 model with PyTorch and an HSI color space-based algorithm for color recognition, achieving a high accuracy rate of 95%.</p>
+                            <p>Integrated DIoU NMS into the detection pipeline, increasing the detection accuracy for overlapping objects by 2.3% and improving the model’s reliability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h2>Skills</h2>
+            <div class="content-container grid-container">
+                <div class="grid-item">Python</div>
+                <div class="grid-item">C/C++</div>
+                <div class="grid-item">Java</div>
+                <div class="grid-item">TypeScript</div>
+                <div class="grid-item">JavaScript</div>
+                <div class="grid-item">Swift</div>
+                <div class="grid-item">C#</div>
+                <div class="grid-item">HTML/CSS</div>
+                <div class="grid-item">SQL</div>
+                <div class="grid-item">React.js</div>
+                <div class="grid-item">Next.js</div>
+                <div class="grid-item">Node.js</div>
+                <div class="grid-item">Spring Boot</div>
+                <div class="grid-item">Flask</div>
+                <div class="grid-item">.Net</div>
+                <div class="grid-item">GraphQL</div>
+                <div class="grid-item">tRPC</div>
+                <div class="grid-item">Tailwind CSS</div>
+                <div class="grid-item">Prisma</div>
+                <div class="grid-item">MongoDB</div>
+                <div class="grid-item">MySQL</div>
+                <div class="grid-item">SQLite</div>
+                <div class="grid-item">Vercel</div>
+                <div class="grid-item">Redis</div>
+                <div class="grid-item">Jest</div>
+                <div class="grid-item">Github Actions</div>
+                <div class="grid-item">PyTorch</div>
+                <div class="grid-item">Keras</div>
+                <div class="grid-item">Pandas</div>
+                <div class="grid-item">OpenCV</div>
+                <div class="grid-item">Git</div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+    </script>
+</body>
+</html>
